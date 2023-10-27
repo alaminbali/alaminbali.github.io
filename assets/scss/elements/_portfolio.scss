@@ -5,9 +5,9 @@
 .rn-portfolio,
 .rn-blog {
     text-align: left;
-    padding: 30px;
+    padding: 20px;
     position: relative;
-    border-radius: 20px;
+    border-radius: 9px;
     background: var(--background-color-1);
     box-shadow: var(--shadow-1);
     position: relative;
@@ -15,7 +15,6 @@
     height: 100%;
     transition: 0.5s all ease-in-out;
     display: inline-block;
-
     @media #{$md-layout} {
         padding: 30px;
     }
@@ -151,7 +150,7 @@
         transition: var(--transition);
         width: 100%;
         height: 100%;
-        border-radius: 20px;
+        border-radius: 9px;
         top: 0;
         left: 0;
         background: linear-gradient(to right bottom, #212428, #16181c);

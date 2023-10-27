@@ -55,37 +55,21 @@
         },
 
         contactForm: function () {
-            $('.rwt-dynamic-form').on('submit', function (e) {
-				e.preventDefault();
-				var _self = $(this);
-				var __selector = _self.closest('input,textarea');
-				_self.closest('div').find('input,textarea').removeAttr('style');
-				_self.find('.error-msg').remove();
-				_self.closest('div').find('button[type="submit"]').attr('disabled', 'disabled');
-				var data = $(this).serialize();
-				$.ajax({
-					url: 'mail.php',
-					type: "post",
-					dataType: 'json',
-					data: data,
-					success: function (data) {
-						_self.closest('div').find('button[type="submit"]').removeAttr('disabled');
-						if (data.code == false) {
-							_self.closest('div').find('[name="' + data.field + '"]');
-							_self.find('.rn-btn').after('<div class="error-msg"><p>*' + data.err + '</p></div>');
-						} else {
-							$('.error-msg').hide();
-							$('.form-group').removeClass('focused');
-							_self.find('.rn-btn').after('<div class="success-msg"><p>' + data.success + '</p></div>');
-							_self.closest('div').find('input,textarea').val('');
-
-							setTimeout(function () {
-								$('.success-msg').fadeOut('slow');
-							}, 5000);
-						}
-					}
-				});
-			});
+            document.addEventListener("DOMContentLoaded", function () {
+                const form = document.getElementById("contactForm");
+                form.addEventListener("submit", function (event) {
+                    const name = document.getElementById("name").value;
+                    const phone = document.getElementById("phone").value;
+                    const email = document.getElementById("email").value;
+                    const subject = document.getElementById("subject").value;
+                    const message = document.getElementById("message").value;
+    
+                    if (name === "" || phone === "" || email === "" || subject === "" || message === "") {
+                        alert("Please fill out all required fields.");
+                        event.preventDefault();
+                    }
+                });
+            });
         },
 
         
