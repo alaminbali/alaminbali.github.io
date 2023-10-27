@@ -1389,7 +1389,9 @@
         font-size: 18px;
         color: var(--color-lightn);
         margin-bottom: 20px;
-
+        a{
+            transition: .3s;
+        }
         span {
             display: block;
             font-size: 14px;
