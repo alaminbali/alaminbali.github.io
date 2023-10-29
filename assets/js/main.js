@@ -24,7 +24,6 @@
             imJs.smothScroll_Two();
             imJs.stickyAdjust();
             imJs.testimonialActivation();
-            imJs.contactForm();
             imJs.wowActive();
             imJs.awsActivation();
             imJs.demoActive();
@@ -53,25 +52,6 @@
                 $('.demo-modal-area').removeClass('open');
             })
         },
-
-        contactForm: function () {
-            document.addEventListener("DOMContentLoaded", function () {
-                const form = document.getElementById("contactForm");
-                form.addEventListener("submit", function (event) {
-                    const name = document.getElementById("name").value;
-                    const phone = document.getElementById("phone").value;
-                    const email = document.getElementById("email").value;
-                    const subject = document.getElementById("subject").value;
-                    const message = document.getElementById("message").value;
-    
-                    if (name === "" || phone === "" || email === "" || subject === "" || message === "") {
-                        alert("Please fill out all required fields.");
-                        event.preventDefault();
-                    }
-                });
-            });
-        },
-
         
         
         wowActive: function () {

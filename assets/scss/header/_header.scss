@@ -474,3 +474,11 @@ body.template-color-1 {
         }
     }
 }
+
+
+#form-messages.error {
+    color: var(--color-danger);
+}
+#form-messages.success {
+    color: var(--color-success);
+}

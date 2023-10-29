@@ -10477,6 +10477,14 @@ body.template-color-1 {
   color: var(--color-primary);
 }
 
+#form-messages.error {
+  color: var(--color-danger);
+}
+
+#form-messages.success {
+  color: var(--color-success);
+}
+
 /*--------------------------
     Navigation Styles  
 ----------------------------*/
@@ -15443,6 +15451,7 @@ div#featured-project-carousel {
 .contact-form-wrapper .introduce {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 .contact-form-wrapper .introduce input {
   width: 100%;

@@ -822,20 +822,13 @@
                                                     <div data-aos-delay="600" class="col-lg-7 contact-input">
                                                         <div class="contact-form-wrapper ml--0">
                                                             <div class="introduce">
-                                                                <form class="rnt-contact-form rwt-dynamic-form row" id="contactForm" method="POST" action="mail.php">
+                                                                <div id="form-messages"></div>
+                                                                <form id="contact-form" class="rnt-contact-form rwt-dynamic-form row" method="POST" action="mail.php">
 
-                                                                    <div class="col-lg-6">
+                                                                    <div class="col-lg-12">
                                                                         <div class="form-group">
                                                                             <label for="name">Your Name</label>
                                                                             <input class="form-control form-control-lg" name="name" id="name" type="text">
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="col-lg-6">
-                                                                        <div class="form-group">
-                                                                            <label for="phone">Phone
-                                                                                Number</label>
-                                                                            <input class="form-control" name="phone" id="phone" type="text">
                                                                         </div>
                                                                     </div>
 
@@ -925,6 +918,7 @@
     <script src="assets/js/vendor/wow.js"></script>
     <script src="assets/js/vendor/aos.js"></script>
     <script src="assets/js/vendor/particles.js"></script>
+    <script src="assets/js/vendor/contactform.js"></script>
     <!-- main JS -->
     <script src="assets/js/main.js"></script>
 </body>
