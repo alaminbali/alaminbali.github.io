@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $recipient = "alaminorko70@gmail.com";
 
     // Set the email subject.
-    $subject = "Openup Contact Form $name";
+    $subject = "Personal Contact Form $name";
 
     // Build the email content.
     $email_content = "Name: $name\n";
